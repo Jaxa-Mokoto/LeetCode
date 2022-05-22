@@ -29,10 +29,6 @@ Constraints:
 1 <= boxTypes.length <= 1000
 1 <= numberOfBoxesi, numberOfUnitsPerBoxi <= 1000
 1 <= truckSize <= 106 */
-
-
-// Online C# Editor for free
-// Write, Edit and Run your C# code using C# Online Compiler
     
 using System;
 
