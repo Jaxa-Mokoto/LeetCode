@@ -38,7 +38,7 @@ public class TruckUnits
     {
     	int[,] boxTypes = new int[3, 2] { { 1, 3 }, { 2, 2 }, { 3, 1 } };
     	TruckUnits myTruckUnits = new TruckUnits();
-		myTruckUnits.MaximumUnits(boxTypes, 4);
+	myTruckUnits.MaximumUnits(boxTypes, 4);
     }
     
     public int[,] Sort2DArray(int[,] boxTypes)
@@ -60,13 +60,13 @@ public class TruckUnits
                     boxTypes[j,0] = tempKey;
                     boxTypes[j, 1] = tempVal;
                 }
-
             }
         }
+	    
         return boxTypes;
     } 
     
-  	public int MaximumUnits(int[,] boxTypes, int truckSize) 
+    public int MaximumUnits(int[,] boxTypes, int truckSize) 
     {
         int remainingTruckSize = truckSize;
         int boxCount = 0;
@@ -81,12 +81,13 @@ public class TruckUnits
             currentUnits = currentUnits + (boxCount * boxTypes[i, 1]);
             remainingTruckSize = remainingTruckSize - boxCount;
 
-			if (remainingTruckSize == 0)
+	    if (remainingTruckSize == 0)
             {
             	Console.WriteLine($"Total units are: {currentUnits}");
             	return currentUnits;
             }
         }
+	    
         return currentUnits;
     }
 }
